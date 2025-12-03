@@ -4,9 +4,10 @@
 /app/node_modules/
 /app/dist/
 
-# Environment
-.env.local
-.env.*.local
+# Environment (NEVER commit secrets)
+.env
+.env.*
+!.env.example
 *.local
 
 # IDE

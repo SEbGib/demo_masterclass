@@ -26,6 +26,10 @@ A demonstration project showcasing AI-assisted development workflows using speci
 git clone https://github.com/SEbGib/demo_masterclass.git
 cd demo_masterclass
 
+# Configure environment (required)
+cp api/.env.example api/.env
+# Edit api/.env and set a random APP_SECRET (or run: sed -i '' "s/CHANGE_ME.*/$(openssl rand -hex 32)/" api/.env)
+
 # Start everything
 make install
 
