@@ -77,6 +77,7 @@
         "phpunit/phpunit": "*",
         "symfony/browser-kit": "7.4.*",
         "symfony/css-selector": "7.4.*",
+        "symfony/http-client": "7.4.*",
         "symfony/phpunit-bridge": "*"
     }
 }

@@ -78,13 +78,19 @@ shell-db: ## Open PostgreSQL shell
 test: test-api test-app ## Run all tests
 
 test-api: ## Run API tests (PHPUnit)
-	docker compose exec api ./vendor/bin/phpunit
+	docker compose exec api php bin/phpunit
 
 test-app: ## Run frontend tests (Vitest)
-	docker compose exec app pnpm test
+	docker compose exec app npm run test:run
 
 test-watch: ## Run frontend tests in watch mode
-	docker compose exec app pnpm test:watch
+	docker compose exec app npm run test
+
+test-api-coverage: ## Run API tests with coverage
+	docker compose exec api php bin/phpunit --coverage-text
+
+test-app-ui: ## Run frontend tests with UI
+	cd app && npm run test:ui
 
 ## Database
 db-migrate: ## Run database migrations
