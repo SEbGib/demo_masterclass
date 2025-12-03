@@ -9,5 +9,5 @@ WORKDIR /app
 # Expose Vite dev server port
 EXPOSE 5173
 
-# Default command - run Vite dev server
-CMD ["pnpm", "dev", "--host", "0.0.0.0"]
+# Install dependencies and start dev server
+CMD ["sh", "-c", "pnpm install && pnpm dev --host 0.0.0.0"]
