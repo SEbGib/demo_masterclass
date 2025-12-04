@@ -51,6 +51,17 @@ services:
     networks:
       - demo_network
 
+  # Database Admin UI
+  adminer:
+    image: adminer:latest
+    container_name: demo_adminer
+    ports:
+      - "8080:8080"
+    depends_on:
+      - database
+    networks:
+      - demo_network
+
   # React Frontend (Vite dev server)
   app:
     build:
