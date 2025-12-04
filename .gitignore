@@ -32,5 +32,6 @@ npm-debug.log*
 # Build
 /app/build/
 
-# Demo script (not versioned)
+# Demo scripts (not versioned)
 SCENARIO.md
+SCENARIO_PRINT.md
