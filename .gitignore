@@ -35,3 +35,6 @@ npm-debug.log*
 # Demo scripts (not versioned)
 SCENARIO.md
 SCENARIO_PRINT.md
+.phpunit.cache/
+.php-cs-fixer.cache
+.phpunit.result.cache
